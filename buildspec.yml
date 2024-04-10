@@ -8,8 +8,8 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t my-golang-helloworld-app .
-      - docker tag my-golang-helloworld-app:latest 767397873937.dkr.ecr.us-east-2.amazonaws.com/my-golang-helloworld-app:latest
+      - docker build -t helloworld .
+      - docker tag helloworld:latest 767397873937.dkr.ecr.us-east-2.amazonaws.com/helloworld:latest
   post_build:
     commands:
       - echo Pushing the Docker image...
