@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image...
-      - docker push 767397873937.dkr.ecr.us-east-2.amazonaws.com/my-golang-helloworld-app:latest
+      - docker push 767397873937.dkr.ecr.us-east-2.amazonaws.com/helloworld:latest
       - echo Build completed on `date`
 
 artifacts:
